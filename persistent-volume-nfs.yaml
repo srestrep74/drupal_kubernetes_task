@@ -9,5 +9,5 @@ spec:
     - ReadWriteMany
   nfs:
     path: /mnt/data/nfs/drupal   # Directorio en el servidor NFS
-    server: 54.152.250.154  # IP del servidor NFS (nodo de EC2 donde configuraste NFS)
+    server: 54.152.250.154  # IP del servidor NFS 
   persistentVolumeReclaimPolicy: Retain
