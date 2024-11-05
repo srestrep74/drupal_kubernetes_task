@@ -12,7 +12,7 @@
 # 1. Descripción del proyecto
 El Proyecto 2 consiste en la implementación de una aplicación web utilizando Drupal, que será desplegada en un clúster de Kubernetes en la nube. Además, se implementarán diferentes servicios para cumplir con los requisitos del proyecto, como un motor de base de datos externo, un servidor de archivos, una capa de acceso al clúster (Ingress) y un servidor de almacenamiento de archivos.
 
-## 1.1. Aspectos cumplidos
+### Aspectos cumplidos
 - Desplegar un clúster de k8s en la nube.
 - Utilizar un motor de base de datos externo.
 - Montar un servidor NFS para almacenar los archivos.
@@ -21,7 +21,7 @@ El Proyecto 2 consiste en la implementación de una aplicación web utilizando D
 - Instalar el clúster en por lo menos 3 máquinas virtuales
 - Cumplir con alta disponibilidad en los servicios de base de datos y archivos
 
-## 1.2. Aspectos no cumplidos
+### Aspectos no cumplidos
 - Ninguno. Todos los aspectos fueron cumplidos satisfactoriamente.
 
 # 2. Diagramas
@@ -32,14 +32,23 @@ El Proyecto 2 consiste en la implementación de una aplicación web utilizando D
 Descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
 ## 3.2. Compilación y ejecución
-Como se compila y ejecuta.
+- Recuerde tener instalado kubectl y mysql en su máquina.
+- Seguir las instrucciones del tutorial para la creación de clústers con microk8s.
+- Git clone del repositorio.
+```bash
+git clone https://github.com/srestrep74/drupal_kubernetes_task.git
+```
+- Ejecutar el siguiente comando para desplegar los servicios.
+```bash
+cd drupal_kubernetes_task
+./kuztomization.yaml
+```
 
 # 4. Resultados
-Opcionalmente - si quiere mostrar resultados o pantallazos 
+
 
 # 5. Referencias
-Debemos siempre reconocer los créditos de partes del código que reutilizaremos, así como referencias a youtube, o referencias bibliográficas utilizadas para desarrollar el proyecto o la actividad
-
-- sitio1-url 
-- sitio2-url
-- url de donde tomo info para desarrollar este proyecto
+- [The simplest way to get K8s anywhere](https://microk8s.io/)
+- [Create a MicroK8s cluster](https://microk8s.io/docs/clustering)
+- [Configuring MySQL Instances for High Availability](https://docs.vmware.com/en/VMware-SQL-with-MySQL-for-Kubernetes/1.10/vmware-mysql-k8s/high-availability.html)
+- [Deploying Drupal with MySQL database on Amazon EKS cluster using Amazon EFS](https://medium.com/@srank2000/deploying-drupal-with-mysql-database-on-amazon-eks-cluster-using-amazon-efs-150b6c36e183)
