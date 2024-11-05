@@ -45,7 +45,18 @@ cd drupal_kubernetes_task
 ```
 
 # 4. Resultados
-
+Opcionalmente - si quiere mostrar resultados o pantallazos 
+## 4.1. Cluster de Drupal Corriendo
+![image](https://github.com/user-attachments/assets/6990dfcf-d0f6-467e-8a47-dc9e234783bc)
+## 4.2. Cluster de MySQL Corriendo
+![image](https://github.com/user-attachments/assets/70829370-bc02-43f9-89d3-1516cbe77608)
+## 4.3. Pods Corriendo
+![image](https://github.com/user-attachments/assets/bc050e32-4cd2-4f2d-b28d-e74714adb87c)
+![image](https://github.com/user-attachments/assets/fd3cc583-8eed-4d0f-b2df-dbaf83680ac8)
+## 4.4. Aplicacion Corriendo
+![image](https://github.com/user-attachments/assets/c2a422c8-231c-4c20-9b62-a04e2bf3c8c3)
+## 4.5. Instancias
+![image](https://github.com/user-attachments/assets/ab83f032-2147-46ab-a257-2ed64e7d5054)
 
 # 5. Referencias
 - [The simplest way to get K8s anywhere](https://microk8s.io/)

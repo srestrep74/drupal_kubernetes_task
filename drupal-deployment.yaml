@@ -4,9 +4,9 @@ kind: Service
 metadata:
   name: drupal
 spec:
-  type: ClusterIP  # Cambiado a ClusterIP para usar con Ingress
+  type: ClusterIP 
   ports:
-    - port: 8080   # Cambiado para coincidir con el puerto de Ingress
+    - port: 8080   
       targetPort: 80
   selector:
     app: drupal
@@ -31,7 +31,7 @@ spec:
         name: drupal
         env:
           - name: DRUPAL_DB_HOST
-            value: wordpress-mysql
+            value: 10.152.183.138    
           - name: DRUPAL_DB_USER
             value: wordpress
           - name: DRUPAL_DB_PASSWORD
@@ -47,29 +47,29 @@ spec:
       volumes:
       - name: drupal-persistent-storage
         persistentVolumeClaim:
-          claimName: drupal-pv-claim
+          claimName: drupal-nfs-pvc  
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: drupal-pv-volume
+  name: drupal-nfs-pv
 spec:
   capacity:
     storage: 5Gi
-  volumeMode: Filesystem
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany   
+  nfs:
+    path: /mnt/data/nfs/drupal   # Ruta en el servidor NFS
+    server: 54.152.250.154  # IP de tu servidor NFS
   persistentVolumeReclaimPolicy: Retain
-  hostPath:
-    path: /mnt/data/drupal # Directorio en el nodo local
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: drupal-pv-claim
+  name: drupal-nfs-pvc
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany 
   resources:
     requests:
       storage: 5Gi
