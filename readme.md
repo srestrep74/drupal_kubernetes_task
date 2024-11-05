@@ -24,8 +24,9 @@ El Proyecto 2 consiste en la implementación de una aplicación web utilizando D
 ### Aspectos no cumplidos
 - Ninguno. Todos los aspectos fueron cumplidos satisfactoriamente.
 
-# 2. Diagramas
-- Diagrama de arquitectura
+# 2. Diagrama de arquitectura
+![Diagrama Arquitectura Proyecto 2 TET](https://github.com/user-attachments/assets/6d4020f4-ca64-44eb-b7c1-439efa43ac11)
+
 
 # 3. Ambiente de desarrollo
 ## 3.1. Detalles técnicos
