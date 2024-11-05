@@ -59,7 +59,10 @@ Opcionalmente - si quiere mostrar resultados o pantallazos
 ## 4.5. Instancias
 ![image](https://github.com/user-attachments/assets/ab83f032-2147-46ab-a257-2ed64e7d5054)
 
-# 5. Referencias
+# 5. Video 
+https://youtu.be/u3o5WaZe5N4
+
+# 6. Referencias
 - [The simplest way to get K8s anywhere](https://microk8s.io/)
 - [Create a MicroK8s cluster](https://microk8s.io/docs/clustering)
 - [Configuring MySQL Instances for High Availability](https://docs.vmware.com/en/VMware-SQL-with-MySQL-for-Kubernetes/1.10/vmware-mysql-k8s/high-availability.html)
